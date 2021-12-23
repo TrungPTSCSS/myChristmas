@@ -1,6 +1,6 @@
 <ion-content>
   <div class="background"
-    style="background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/images/bgg.jpg');width: 100%; height: 100%; position: absolute; top: 0;">
+    style="background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('./assets/images/bgg.jpg');width: 100%; height: 100%; position: absolute; top: 0;">
     <div class="container">
       <div class="title" [ngClass]="{'active-title' : active}">
         <h1>Hello my honey!</h1>
@@ -10,11 +10,11 @@
       </div>
       <div class="circle" [ngClass]="{'active-circle' : active}">
         <div class="img" (click)="clickCircle()">
-          <img [ngClass]="{'rotate360del' : click}" src="assets/images/circle.png" alt="">
+          <img [ngClass]="{'rotate360del' : click}" src="./assets/images/circle.png" alt="">
           <div [ngClass]="{'rotate360' : click}" class="strock"></div>
         </div>
         <audio #audioOption>
-          <source src='assets/images/audio.mp3' type="audio/mp3">
+          <source src='./assets/images/audio.mp3' type="audio/mp3">
         </audio>
       </div>
     </div>
