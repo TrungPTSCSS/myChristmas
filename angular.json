@@ -166,11 +166,15 @@
               "devServerTarget": "app:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
   },
   "cli": {
+    "analytics": "f180d502-3048-4039-bf0f-eeb85be28f0b",
     "defaultCollection": "@ionic/angular-toolkit"
   },
   "schematics": {
